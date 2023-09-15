@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Agregar Persona</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="central">
+    <ion-list>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="rut" label="Ingrese Rut" placeholder="Su rut"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="nombre" label="Ingrese Nombre" placeholder="Su nombre"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="apellido" label="Ingrese Apellido" placeholder="Su apellido"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="edad" label="Ingrese Edad" placeholder="Su edad"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button (click)="grabar()">Grabar</ion-button>
+      </ion-item>
+
+    </ion-list>
+  </div>
+</ion-content>
